@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/MehranBalouche/admin-panel/issues"
   },
-  "homepage": "https://github.com/MehranBalouche/admin-panel#readme"
+  "homepage": "https://github.com/MehranBalouche/admin-panel#readme",
+  "dependencies": {
+    "sass": "^1.68.0"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.3.3"
+  }
 }
