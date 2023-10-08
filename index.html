@@ -1,20 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin panel | home</title>
-    <!-- <link rel="stylesheet" href="./css/style.css"> -->
+    <link rel="shortcut icon" href="./images/logo/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./styles/style.css">
 </head>
-<body>
-    <header id="header"></header>
-    <slider id="slider"></slider>
-    <div>
-        <h1>boody</h1>
+<body class="bg-[#f2f7ff]">
+    
+    <div class="max-w-[140px]">
+        <!--start slider -->
+        <slider id="slider" class="slider">
+            <button id="sliderCloseBtn" type="button" class="slider-closetbn sliderCloseBtn">
+                <svg class="w-[20px] h-[20px]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+                    </svg>
+            </button>
+            <a href="index.html" class="slider-logo">
+                <img src="./images/logo/logo.svg" alt="logo">
+            </a>
+            <div class="slider-menu-contents">
+                <ul>
+                    <li><a href="#">dashboard</a></li>
+                    <li><a href="#">dashboard</a></li>
+                    <li><a href="#">dashboard</a></li>
+                    <li><a href="#">dashboard</a></li>
+                    <li><a href="#">dashboard</a></li>
+                </ul>
+            </div>
+        </slider>
+        <!--end slider -->
+
+        <section class="container">
+            <!--start navbar -->
+            <nav id="navbar" class="navbar">
+                <button id="sliderOpenBtn" class="open-btn" type="button" >
+                    <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+                    </svg>
+                </button>
+                <ul class="nav-list">
+                    <li><a class="nav-list-item" href="#">home</a></li>
+                    <li><a class="nav-list-item" href="#">about</a></li>
+                    <li><a class="nav-list-item" href="#">home</a></li>
+                    <li><a class="nav-list-item" href="#">home</a></li>
+                </ul>
+            </nav>
+            <!--end navbar -->
+
+            <main>
+                <h1>boody</h1>
+            </main>
+
+        </section>
+
+        <!--start footer -->
+        <footer id="footer">
+            footer
+        </footer>
+        <!--end footer -->
     </div>
-    <footer id="footer"></footer>
-
-
 
     <script src="./js/script.js"></script>
 </body>

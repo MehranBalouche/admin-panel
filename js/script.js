@@ -1,14 +1,13 @@
 let $ = document;
-
-// header & footer handler
-const headerElem = $.getElementById('header')
-const footerElem = $.getElementById('footer')
+// slider handler
 const sliderElem = $.getElementById('slider')
-window.addEventListener('load', doLoadHandler)    
-    
-function doLoadHandler(){
-    fetch('./../pages/header.html').then(res => res.text()).then(contetn => headerElem.innerHTML = contetn)
-    fetch('./../pages/slider.html').then(res => res.text()).then(contetn => sliderElem.innerHTML = contetn)
-    fetch('./../pages/footer.html').then(res => res.text()).then(contetn => footerElem.innerHTML = contetn)
-}
 
+window.addEventListener('DOMContentLoaded', sliderHandler)
+function sliderHandler(){
+    let sliderCloseBtnElem = $.getElementById('sliderCloseBtn')
+    let sliderOpenBtnElem = $.getElementById('sliderOpenBtn')
+
+    sliderCloseBtnElem.addEventListener('click', ()=> sliderElem.classList.remove('slider-showing'))
+    sliderOpenBtnElem.addEventListener('click', ()=> sliderElem.classList.add('slider-showing'))
+
+}
