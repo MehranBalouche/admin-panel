@@ -1,13 +1,22 @@
 let $ = document;
 // slider handler
-const sliderElem = $.getElementById('slider')
+const sliderElem = $.getElementById('slider');
+const sliderBackDropElem = $.querySelector('.sidebar-backdrop');
+const sliderCloseBtnElem = $.getElementById('sliderCloseBtn');
+const sliderOpenBtnElem = $.getElementById('sliderOpenBtn');
 
-window.addEventListener('DOMContentLoaded', sliderHandler)
 function sliderHandler(){
-    let sliderCloseBtnElem = $.getElementById('sliderCloseBtn')
-    let sliderOpenBtnElem = $.getElementById('sliderOpenBtn')
-
-    sliderCloseBtnElem.addEventListener('click', ()=> sliderElem.classList.remove('slider-showing'))
-    sliderOpenBtnElem.addEventListener('click', ()=> sliderElem.classList.add('slider-showing'))
-
+    sliderCloseBtnElem.addEventListener('click', ()=> closeSlider())
+    sliderOpenBtnElem.addEventListener('click', ()=> openSlider())
 }
+
+function closeSlider(){
+    sliderElem.classList.remove('slider-showing');
+    sliderBackDropElem.style.display = 'none';
+}
+function openSlider(){
+    sliderElem.classList.add('slider-showing');
+    sliderBackDropElem.style.display = 'block';
+}
+sliderBackDropElem.addEventListener('click', closeSlider)
+window.addEventListener('load', sliderHandler);
