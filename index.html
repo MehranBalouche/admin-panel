@@ -42,38 +42,60 @@
                     </svg>
                 </button>
                 <ul class="nav-list">
+                    <!-- profile part -->
                     <li>
                         <div class="nav-list-item">
                             <img class="nav-profile" src="./images/faces/3.jpg" alt="profile-image">
+                            <!-- profile card -->
+                            <div class="nav-profile-box unread">
+                                <div class="nav-profile-box-header">
+                                    <h6>notificatons</h6>
+                                    <p>Mark all as read</p>
+                                </div>
+                                <div class="nav-profile-box-body">
+                                    <div class="profile-box-body-noti">
+                                        <img src="./images/faces/3.jpg" alt="card-image">
+                                        <div class="profile-box-body-info">
+                                            <h6 class="name">Jessie Samson</h6>
+                                            <p class="massage">
+                                                <i class="message-icon bi bi-chat-left-dots"></i>
+                                                <span>Mentioned you in a comment.</span>
+                                                <span class="font-bold">10m</span>
+                                            </p>
+                                            <div class="message-date"><i class="bi bi-clock-fill"></i>10:18 august 7,2021</div>
+                                        </div>
+                                        <div class="profile-box-body-setting">
+                                            <button type="button" class="bi bi-reply">
+                                                <div class="setting-tooltip">reply</div>
+                                            </button>
+                                            <button type="button" class="bi bi-check2-all">
+                                                <div class="setting-tooltip">mark as read</div>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-profile-box-footer">
+                                    <a href="#">notification history</a>
+                                </div>
+                            </div>
                         </div>
                     </li>
+                    <!-- Notificatons part -->
                     <li><div class="nav-list-item"><i class="bi bi-bell"></i></div></li>
-                    <li><div class="nav-list-item"><i class="bi bi-envelope-at"></i></div></li>
+                    <!-- theme toggle part -->
                     <li>
                         <div id="theme-toggle" class="nav-list-item theme-toggle">
                             <i id="theme-toggle-dark-icon" class="bi bi-moon-stars"></i>
                             <i id="theme-toggle-light-icon" class="bi bi-sun"></i>
                         </div>
                     </li>
+
                 </ul>
             </nav>
             <!--end navbar -->
 
             <main>
                 <section class="px-4">
-                    <div>
-                        <div class="bg-white dark:bg-slate-800 rounded-lg px-6 py-8 ring-1 ring-slate-900/5 shadow-xl">
-                            <div>
-                              <span class="inline-flex items-center justify-center p-2 bg-indigo-500 rounded-md shadow-lg">
-                                <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><!-- ... --></svg>
-                              </span>
-                            </div>
-                            <h3 class="text-slate-900 dark:text-white mt-5 text-base font-medium tracking-tight">Writes Upside-Down</h3>
-                            <p class="text-slate-500 dark:text-slate-400 mt-2 text-sm">
-                              The Zero Gravity Pen can be used to write in any orientation, including upside-down. It even works in outer space.
-                            </p>
-                          </div>
-                    </div>
                 </section>
                 <!--start footer -->
                 <footer id="footer">
