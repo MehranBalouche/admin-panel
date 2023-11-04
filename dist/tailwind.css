@@ -58,10 +58,10 @@
         @apply text-sm text-blue-500 hover:underline capitalize	cursor-pointer
     }
     .nav-profile-box-body{
-        @apply h-96
+        @apply h-96 overflow-hidden
     }
     .profile-box-body-noti{
-        @apply flex p-4 bg-gray-300 relative
+        @apply flex p-4 relative
     }
     .profile-box-body-noti img{
         @apply w-8 h-8 rounded-full mr-3
