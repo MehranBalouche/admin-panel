@@ -83,3 +83,36 @@ function setThemeColor(){
     return
 }
 window.addEventListener('load', setThemeColor)
+
+        // notification settings
+
+let notificationBtnElem =  $.getElementById('notificationBtn')
+let notificationSettingsBoxElem = $.getElementById('notificationSettingsBox')
+
+        // show/hide the menu when the button is clicked
+notificationBtnElem.addEventListener('click', ()=>{
+    notificationSettingsBoxElem.classList.toggle('hidden')
+});
+        // hide the menu when a click event occurs outside the menu
+$.addEventListener('click', (event) => {
+    if (!notificationSettingsBoxElem.contains(event.target) && !notificationBtnElem.contains(event.target)) {
+        notificationSettingsBoxElem.classList.add('hidden');
+    }
+  });
+
+            // profile settings ================*
+
+let imgProfileElem =  $.getElementById('imgProfile')
+let profileSettingsBoxElem = $.getElementById('profileSettingsBox')
+
+
+        // show/hide the menu when the button is clicked =========*
+imgProfileElem.addEventListener('click', ()=>{
+    profileSettingsBoxElem.classList.toggle('hidden')
+});
+        // hide the menu when a click event occurs outside the menu =========*
+$.addEventListener('click', (event) => {
+    if (!profileSettingsBoxElem.contains(event.target) && !imgProfileElem.contains(event.target)) {
+        profileSettingsBoxElem.classList.add('hidden');
+    }
+  });

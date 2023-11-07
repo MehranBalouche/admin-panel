@@ -45,86 +45,94 @@
                     <!-- profile part -->
                     <li>
                         <div class="nav-list-item">
-                            <img class="nav-profile" src="./images/faces/3.jpg" alt="profile-image">
+                            <img id="imgProfile" class="nav-profile" src="./images/faces/3.jpg" alt="profile-image">
                             <!-- **** profile card ***** -->
-                            <div class="nav-profile-box unread">
-                                <div class="nav-profile-box-header">
-                                    <h6>notificatons</h6>
-                                    <p>Mark all as read</p>
-                                </div>
-                                <div class="nav-profile-box-body">
-                                    <!-- notofication 1 -->
-                                    <div class="profile-box-body-noti bg-gray-300">
-                                        <img src="./images/faces/3.jpg" alt="card-image">
-                                        <div class="profile-box-body-info">
-                                            <h6 class="name">Jessie Samson</h6>
-                                            <p class="massage">
-                                                <i class="message-icon bi bi-chat-left-dots"></i>
-                                                <span>Mentioned you in a comment.</span>
-                                                <span class="font-bold">10m</span>
-                                            </p>
-                                            <div class="message-date"><i class="bi bi-clock-fill"></i>10:18 august 7,2021</div>
-                                        </div>
-                                        <div class="profile-box-body-setting">
-                                            <button type="button" class="bi bi-reply">
-                                                <div class="setting-tooltip">reply</div>
-                                            </button>
-                                            <button type="button" class="bi bi-check2-all">
-                                                <div class="setting-tooltip">mark as read</div>
-                                            </button>
-                                        </div>
-                                    </div>
-                                    <!-- notofication 2 -->
-                                    <div class="profile-box-body-noti">
-                                        <img src="./images/faces/6.jpg" alt="card-image">
-                                        <div class="profile-box-body-info">
-                                            <h6 class="name">Jessie Samson</h6>
-                                            <p class="massage">
-                                                <i class="message-icon bi bi-calendar3"></i>
-                                                <span>Created an event.</span>
-                                                <span class="font-bold">20m</span>
-                                            </p>
-                                            <div class="message-date"><i class="bi bi-clock-fill"></i>15:18 august 7,2021</div>
-                                        </div>
-                                        <div class="profile-box-body-setting">
-                                            <button type="button" class="bi bi-reply">
-                                                <div class="setting-tooltip">reply</div>
-                                            </button>
-                                            <button type="button" class="bi bi-check2-all text-blue-600">
-                                                <div class="setting-tooltip">mark as read</div>
-                                            </button>
-                                        </div>
-                                    </div>
-                                    <!-- notofication 3 -->
-                                    <div class="profile-box-body-noti">
-                                        <img src="./images/faces/8.jpg" alt="card-image">
-                                        <div class="profile-box-body-info">
-                                            <h6 class="name">Jessie Samson</h6>
-                                            <p class="massage">
-                                                <i class="message-icon bi bi-chat-left-dots"></i>
-                                                <span>Mentioned you in a comment.</span>
-                                                <span class="font-bold">1h</span>
-                                            </p>
-                                            <div class="message-date"><i class="bi bi-clock-fill"></i>18:18 august 7,2021</div>
-                                        </div>
-                                        <div class="profile-box-body-setting">
-                                            <button type="button" class="bi bi-reply">
-                                                <div class="setting-tooltip">reply</div>
-                                            </button>
-                                            <button type="button" class="bi bi-check2-all text-blue-600">
-                                                <div class="setting-tooltip">mark as read</div>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="nav-profile-box-footer">
-                                    <a href="#">notification history</a>
-                                </div>
+                            <div id="profileSettingsBox" class="nav-profile-box hidden">
+                                sttings
                             </div>
                         </div>
                     </li>
                     <!-- Notificatons part -->
-                    <li><div class="nav-list-item"><i class="bi bi-bell"></i></div></li>
+                    <li>
+                        <div id="notificationBtn" class="nav-list-item ">
+                            <i class="bi bi-bell"></i>
+                        </div>
+
+                        <div id="notificationSettingsBox" class="nav-notification-box hidden">
+                            <div class="nav-notification-box-header">
+                                <h6>notificatons</h6>
+                                <p>Mark all as read</p>
+                            </div>
+                            <div class="nav-notification-box-body ">
+                                <!-- notofication 1 -->
+                                <div class="notification-box-body unread">
+                                    <img src="./images/faces/3.jpg" alt="card-image">
+                                    <div class="notification-box-body-info">
+                                        <h6 class="name">Jessie Samson</h6>
+                                        <p class="massage">
+                                            <i class="message-icon bi bi-chat-left-dots"></i>
+                                            <span>Mentioned you in a comment.</span>
+                                            <span class="font-bold">10m</span>
+                                        </p>
+                                        <div class="message-date"><i class="bi bi-clock-fill"></i>10:18 august 7,2021</div>
+                                    </div>
+                                    <div class="notification-box-body-setting">
+                                        <button type="button" class="bi bi-reply">
+                                            <div class="setting-tooltip">reply</div>
+                                        </button>
+                                        <button type="button" class="bi bi-check2-all">
+                                            <div class="setting-tooltip">mark as read</div>
+                                        </button>
+                                    </div>
+                                </div>
+                                <!-- notofication 2 -->
+                                <div class="notification-box-body">
+                                    <img src="./images/faces/6.jpg" alt="card-image">
+                                    <div class="notification-box-body-info">
+                                        <h6 class="name">Jessie Samson</h6>
+                                        <p class="massage">
+                                            <i class="message-icon bi bi-calendar3"></i>
+                                            <span>Created an event.</span>
+                                            <span class="font-bold">20m</span>
+                                        </p>
+                                        <div class="message-date"><i class="bi bi-clock-fill"></i>15:18 august 7,2021</div>
+                                    </div>
+                                    <div class="notification-box-body-setting">
+                                        <button type="button" class="bi bi-reply">
+                                            <div class="setting-tooltip">reply</div>
+                                        </button>
+                                        <button type="button" class="bi bi-check2-all text-blue-600">
+                                            <div class="setting-tooltip">mark as read</div>
+                                        </button>
+                                    </div>
+                                </div>
+                                <!-- notofication 3 -->
+                                <div class="notification-box-body">
+                                    <img src="./images/faces/8.jpg" alt="card-image">
+                                    <div class="notification-box-body-info">
+                                        <h6 class="name">Jessie Samson</h6>
+                                        <p class="massage">
+                                            <i class="message-icon bi bi-chat-left-dots"></i>
+                                            <span>Mentioned you in a comment.</span>
+                                            <span class="font-bold">1h</span>
+                                        </p>
+                                        <div class="message-date"><i class="bi bi-clock-fill"></i>18:18 august 7,2021</div>
+                                    </div>
+                                    <div class="notification-box-body-setting">
+                                        <button type="button" class="bi bi-reply">
+                                            <div class="setting-tooltip">reply</div>
+                                        </button>
+                                        <button type="button" class="bi bi-check2-all text-blue-600">
+                                            <div class="setting-tooltip">mark as read</div>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="nav-notification-box-footer">
+                                <a href="#">notification history</a>
+                            </div>
+                        </div>
+                    </li>
                     <!-- theme toggle part -->
                     <li>
                         <div id="theme-toggle" class="nav-list-item theme-toggle">

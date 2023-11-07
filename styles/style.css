@@ -767,9 +767,9 @@ video {
   background-color: rgb(254 240 138 / var(--tw-bg-opacity));
 }
 
-/* nav-profile-box */
+/* nav-notification-box */
 
-.nav-profile-box {
+.nav-notification-box {
   position: absolute;
   top: 5rem;
   right: 2.5rem;
@@ -784,12 +784,12 @@ video {
 }
 
 @media (min-width: 768px) {
-  .nav-profile-box {
+  .nav-notification-box {
     width: 360px;
   }
 }
 
-.nav-profile-box-header {
+.nav-notification-box-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -802,7 +802,7 @@ video {
   padding-bottom: 5px;
 }
 
-.nav-profile-box-header h6 {
+.nav-notification-box-header h6 {
   font-size: 1.125rem;
   line-height: 1.75rem;
   font-weight: 600;
@@ -811,7 +811,7 @@ video {
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
-.nav-profile-box-header p {
+.nav-notification-box-header p {
   cursor: pointer;
   font-size: 0.875rem;
   line-height: 1.25rem;
@@ -820,22 +820,22 @@ video {
   color: rgb(59 130 246 / var(--tw-text-opacity));
 }
 
-.nav-profile-box-header p:hover {
+.nav-notification-box-header p:hover {
   text-decoration-line: underline;
 }
 
-.nav-profile-box-body {
+.nav-notification-box-body {
   height: 24rem;
   overflow: hidden;
 }
 
-.profile-box-body-noti {
+.notification-box-body {
   position: relative;
   display: flex;
   padding: 1rem;
 }
 
-.profile-box-body-noti img {
+.notification-box-body img {
   margin-right: 0.75rem;
   height: 2rem;
   width: 2rem;
@@ -844,35 +844,35 @@ video {
 
 .unread {
   --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
 }
 
-.profile-box-body-noti .name {
+.notification-box-body .name {
   font-size: 0.875rem;
   line-height: 1.25rem;
   font-weight: 700;
 }
 
-.profile-box-body-noti .\!name {
+.notification-box-body .\!name {
   font-size: 0.875rem;
   line-height: 1.25rem;
   font-weight: 700;
 }
 
-.profile-box-body-noti .massage {
+.notification-box-body .massage {
   margin-top: 1rem;
   font-size: 0.875rem;
   line-height: 1.25rem;
 }
 
-.profile-box-body-info .message-date {
+.notification-box-body-info .message-date {
   margin-top: 1rem;
   font-size: 0.875rem;
   line-height: 1.25rem;
   font-weight: 700;
 }
 
-.profile-box-body-setting {
+.notification-box-body-setting {
   position: absolute;
   top: 0.5rem;
   right: 0.75rem;
@@ -881,7 +881,7 @@ video {
   line-height: 1.5rem;
 }
 
-.profile-box-body-setting button {
+.notification-box-body-setting button {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
   font-size: 22px;
@@ -907,11 +907,11 @@ video {
   transition-duration: 500ms;
 }
 
-.profile-box-body-setting button:hover .setting-tooltip {
+.notification-box-body-setting button:hover .setting-tooltip {
   display: block;
 }
 
-.nav-profile-box-footer {
+.nav-notification-box-footer {
   border-top-width: 1px;
   --tw-border-opacity: 1;
   border-color: rgb(209 213 219 / var(--tw-border-opacity));
@@ -926,8 +926,30 @@ video {
   color: rgb(59 130 246 / var(--tw-text-opacity));
 }
 
-.nav-profile-box-footer:hover {
+.nav-notification-box-footer:hover {
   text-decoration-line: underline;
+}
+
+/* nav => profile  */
+
+.nav-profile-box {
+  position: absolute;
+  top: 5rem;
+  right: 2.5rem;
+  width: 100%;
+  cursor: default;
+  border-radius: 0.5rem;
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(209 213 219 / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+@media (min-width: 768px) {
+  .nav-profile-box {
+    width: 360px;
+  }
 }
 
 .sr-only {
@@ -2103,11 +2125,6 @@ video {
 .bg-\[rgb\(255\2c 0\2c 0\)\] {
   --tw-bg-opacity: 1;
   background-color: rgb(255 0 0 / var(--tw-bg-opacity));
-}
-
-.bg-gray-300 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(209 213 219 / var(--tw-bg-opacity));
 }
 
 .decoration-slice {
