@@ -36,7 +36,7 @@
         @apply flex items-center flex-row-reverse
     }
     .nav-list-item{
-        @apply px-3 cursor-pointer text-2xl
+        @apply px-3 cursor-pointer text-2xl relative
     }
     .nav-profile{
         @apply w-10 h-10 rounded-full relative	
@@ -45,6 +45,9 @@
         @apply mr-5 flex items-center justify-center text-blue-600 rounded-full bg-blue-100 w-10 h-10 hover:bg-blue-200 dark:text-yellow-500 dark:bg-yellow-50 dark:hover:bg-yellow-200
     }
     /* nav-notification-box */
+    .have-unread-msg{
+        @apply absolute top-1 right-3 w-3 h-3 bg-green-700 border border-white rounded-full
+    }
     .nav-notification-box{
         @apply absolute top-20 right-10 rounded-lg	bg-white w-full md:w-[360px] border-gray-300 border	cursor-default	
     }
@@ -94,8 +97,15 @@
         @apply text-center text-sm text-blue-500 font-bold capitalize border-t border-gray-300	hover:underline py-[5px]	
     }
 
+
     /* nav => profile  */
     .nav-profile-box{
-        @apply absolute top-20 right-10 rounded-lg	bg-white w-full md:w-[360px] border-gray-300 border	cursor-default
+        @apply absolute top-20 right-10 rounded-lg	bg-white w-full md:w-[260px]  border-gray-300 border text-lg p-3 cursor-default
+    }
+    .profileSettingsBox-item{
+        @apply mb-2 hover:bg-slate-200 rounded
+    }
+    .btn-sgin-out{
+        @apply rounded-lg w-full text-center border border-gray-300 text-lg mt-8 py-1 hover:bg-gray-200
     }
 }
